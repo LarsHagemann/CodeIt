@@ -1,0 +1,28 @@
+/*
+Handler functions:
+	getTileInfo(vec2u) -> TileInfo
+	infoFront() -> TileInfo
+	interactFront() -> void
+	inventoryIndex() -> unsigned
+	inventoryItem() -> ItemId
+	inventorySelectNext() -> void
+	movePlayerForward() -> void
+	turnPlayerRight() -> void
+	useItem() -> void
+*/
+(10, 7) #///< Size
+(0, 6) #///< Begin
+(9,  0) #///< Goal
+{
+0 0 0 0 0 0 0 0 2 0	
+0 0 0 0 0 0 0 0 2 2
+0 0 0 0 0 0 0 0 0 0	
+0 0 0 0 0 0 0 0 0 0	
+0 0 0 0 0 0 0 0 0 0	
+0 0 0 0 0 0 0 0 0 0	
+0 0 0 0 0 0 0 0 0 0	
+}
+[
+	box((1, 6)),
+	plate((2, 6), change_tile((8, 0), 2, 0))
+] #///< Entities
